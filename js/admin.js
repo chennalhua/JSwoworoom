@@ -22,7 +22,7 @@ function getCartOrder(){
             })
             //訂單日期處理
             let thisDate = new Date(item.createdAt * 1000);
-            let orderDate = `${thisDate.getFullYear()}/${thisDate.getMonth()}/${thisDate.getDate()}`;
+            let orderDate = `${thisDate.getFullYear()}/${thisDate.getMonth()+1}/${thisDate.getDate()}`;
             //訂單狀態處理
             let orderStatus = '';
             if(item.paid == true){
